@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #100b25;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #1c123b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #d6a5ff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d6a5ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 8%;
+    background: linear-gradient(120deg, #151033, #39206b);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #c89bff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #c69cff;
+}
+
+.hero h3 {
+    color: #b8c8ff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    border: 3px solid #a56eff;
+    box-shadow: 0 0 30px #6633cc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #9255e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c49aff;
+    transform: translateY(-4px);
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #a56eff;
+}
+
+.moving-text {
+    background: #28164d;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.moving-text p {
+    white-space: nowrap;
+    animation: moveText 15s linear infinite;
+    color: #d6a5ff;
+    font-weight: bold;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+section {
+    padding: 80px 8%;
+    scroll-margin-top: 90px;
+}
+
+.section-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #d3a8ff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-container img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 3px solid #995cff;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.cards,
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.goals-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background: #21163f;
+    padding: 35px 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #63429c;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    background: #39245e;
+    box-shadow: 0 0 20px #7245bb;
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #d4a7ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.skills-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skills-container p {
+    margin: 20px 0 10px;
+}
+
+.skill-bar {
+    height: 15px;
+    background: #33234d;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    background: linear-gradient(90deg, #7455ff, #d58cff);
+    border-radius: 20px;
+}
+
+.game-description {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.game-container {
+    max-width: 750px;
+    margin: auto;
+    padding: 25px;
+    background: #21163f;
+    border: 2px solid #8955dd;
+    border-radius: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#gameArea {
+    height: 250px;
+    background: linear-gradient(#7d6ac2, #d8a8c9);
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border-bottom: 12px solid #5c3978;
+    touch-action: manipulation;
+}
+
+#horse {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
+    font-size: 65px;
+    line-height: 85px;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+}
+
+.obstacle.cactus {
+    background: #25834d;
+    border: 3px solid #145c34;
+    border-radius: 12px 12px 3px 3px;
+}
+
+.obstacle.rock {
+    background: linear-gradient(#dcb88d, #7a5334);
+    border: 3px solid #63401f;
+    border-radius: 45% 45% 10% 10%;
+}
+
+#gameMessage {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #251438;
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.game-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-buttons button {
+    padding: 14px 35px;
+    background: #9255e8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.game-buttons button:hover {
+    background: #b788ff;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    background: #1c123b;
+}
+
+footer h2 {
+    color: #d3a8ff;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .cards,
+    .goals-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .cards,
+    .goals-container {
+        grid-template-columns: 1fr;
+    }
+
+    #horse {
+        left: 25px;
+    }
+
+    .game-container {
+        padding: 12px;
+    }
+}

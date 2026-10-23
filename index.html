@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Dino | My World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>★ SEAN DINO</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#skills">Skills</a>
+        <a href="#goals">Goals</a>
+        <a href="#game">Mini Game</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <p class="small-title">WELCOME TO MY WORLD ★</p>
+
+        <h1>Hey, I'm <span>Sean Vincent T. Dino</span></h1>
+
+        <h3>BSIT Student | University of Cebu</h3>
+
+        <p>
+            I'm mostly quiet, but I have many interests.
+            I enjoy gaming, reading manga, watching videos,
+            and learning about technology.
+        </p>
+
+        <a href="#about" class="btn">Explore My World</a>
+        <a href="#game" class="btn secondary">Play My Game 🐎</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="hero.png" alt="My Gaming World">
+    </div>
+</section>
+
+<div class="moving-text">
+    <p>★ GAMING ★ MANGA ★ ANIME ★ CODING ★ CHESS ★ STEEL BALL RUN ★</p>
+</div>
+
+<section id="about">
+    <h2 class="section-title">★ About Me</h2>
+
+    <div class="about-container">
+        <img src="gyro.png" alt="Gyro Zeppeli">
+
+        <div class="about-text">
+            <h2>Who Am I?</h2>
+
+            <p>
+                My name is Sean Vincent T. Dino.
+                I'm a BSIT student at the University of Cebu.
+            </p>
+
+            <p>
+                I'm a quiet person who enjoys learning new things.
+                I like playing games, reading manga, and solving problems.
+            </p>
+
+            <p>
+                My goal is to finish college,
+                find a decent job, and build a better future.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2 class="section-title">★ My Hobbies & Interests</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🎮</div>
+            <h3>Gaming</h3>
+            <p>I enjoy playing video games during my free time.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>Manga</h3>
+            <p>I enjoy reading manga, especially Steel Ball Run.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">♟️</div>
+            <h3>Chess</h3>
+            <p>I like chess and games that challenge my thinking.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Technology</h3>
+            <p>I enjoy learning programming and web development.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">★ My Skills</h2>
+
+    <div class="skills-container">
+        <p>Programming</p>
+        <div class="skill-bar">
+            <div style="width: 40%"></div>
+        </div>
+
+        <p>Problem Solving</p>
+        <div class="skill-bar">
+            <div style="width: 65%"></div>
+        </div>
+
+        <p>Observation</p>
+        <div class="skill-bar">
+            <div style="width: 85%"></div>
+        </div>
+
+        <p>Adaptability</p>
+        <div class="skill-bar">
+            <div style="width: 80%"></div>
+        </div>
+    </div>
+</section>
+
+<section id="goals">
+    <h2 class="section-title">★ My Goals</h2>
+
+    <div class="goals-container">
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Finish College</h3>
+            <p>Complete my BSIT degree.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Improve My Skills</h3>
+            <p>Learn more about programming and technology.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Find a Good Job</h3>
+            <p>Build a stable future after graduation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="game">
+    <h2 class="section-title">🐎 Gyro's Horse Jumping Challenge</h2>
+
+    <p class="game-description">
+        Help Gyro jump over rocks and cacti!
+        Press SPACE or tap JUMP to play.
+    </p>
+
+    <div class="game-container">
+        <div class="game-info">
+            <span>Score: <b id="score">0</b></span>
+            <span>Best: <b id="best">0</b></span>
+        </div>
+
+        <div id="gameArea">
+            <div id="horse">🏇</div>
+            <div id="gameMessage">Press START to begin!</div>
+        </div>
+
+        <div class="game-buttons">
+            <button id="startBtn">START</button>
+            <button id="jumpBtn">JUMP</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>★ Thanks for Visiting!</h2>
+    <p>Small steps every day lead to big goals.</p>
+    <p>© 2026 Sean Vincent T. Dino</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
